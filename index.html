@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         button{
+        padding: 20px;
+        border:1px solid greenyellow;
+        background-color: rgb(160, 238, 34);
+        font-size: 18px;
+        color: white;
+        transition:1s ease;
+        animation-name:move;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes move{
+        0%{
+            transform:translateX(0px) rotate(0deg);
+
+        }
+        50%{
+            transform:translateX(800px) rotate(360deg);
+
+        }
+        100%{
+            transform:translateX(0px) rotate(0deg);
+
+        }
+    }
+</style>
+</head>
+<body>
+    <div>
+    <h2>Hello, this is testing</h2>
+    <button>CSS</button>
+    </div>
+</body>
+</html>
